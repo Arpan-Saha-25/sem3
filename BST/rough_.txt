@@ -1,0 +1,44 @@
+    "terminal.background":"#000000",
+    "terminal.foreground":"#D0D0D0",
+    "terminalCursor.background":"#D0D0D0",
+    "terminalCursor.foreground":"#D0D0D0",
+    "terminal.ansiBlack":"#000000",
+    "terminal.ansiBlue":"#0066FF",
+    "terminal.ansiBrightBlack":"#808080",
+    "terminal.ansiBrightBlue":"#0066FF",
+    "terminal.ansiBrightCyan":"#00FFFF",
+    "terminal.ansiBrightGreen":"#33FF00",
+    "terminal.ansiBrightMagenta":"#CC00FF",
+    "terminal.ansiBrightRed":"#FF0000",
+    "terminal.ansiBrightWhite":"#FFFFFF",
+    "terminal.ansiBrightYellow":"#FF0099",
+    "terminal.ansiCyan":"#00FFFF",
+    "terminal.ansiGreen":"#33FF00",
+    "terminal.ansiMagenta":"#CC00FF",
+    "terminal.ansiRed":"#FF0000",
+    "terminal.ansiWhite":"#D0D0D0",
+    "terminal.ansiYellow":"#FF0099"
+
+
+
+
+
+
+    "terminal.background":"#131212",
+    "terminal.foreground":"#dddad6",
+    "terminal.ansiBlack":"#1D2021",
+    "terminal.ansiBrightBlack":"#665C54",
+    "terminal.ansiBrightBlue":"#0D6678",
+    "terminal.ansiBrightCyan":"#8BA59B",
+    "terminal.ansiBrightGreen":"#237e02",
+    "terminal.ansiBrightMagenta":"#8F4673",
+    "terminal.ansiBrightRed":"#FB543F",
+    "terminal.ansiBrightWhite":"#FDF4C1",
+    "terminal.ansiBrightYellow":"#FAC03B",
+    "terminal.ansiBlue":"#00a1f9",
+    "terminal.ansiCyan":"#8BA59B",
+    "terminal.ansiGreen":"#95C085",
+    "terminal.ansiMagenta":"#8F4673",
+    "terminal.ansiRed":"#FB543F",
+    "terminal.ansiWhite":"#A89984",
+    "terminal.ansiYellow":"#FAC03B"
