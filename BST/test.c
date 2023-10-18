@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 
     a = 3;
     printf(" %d%d%d",a++,a++,++a);
-                    //  5  4  5
+                    //  5  4  6
 
 
 
