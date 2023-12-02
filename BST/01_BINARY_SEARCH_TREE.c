@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 
 /*
           50
@@ -45,6 +45,8 @@ int main()
 
   p4->left = p5;
   p4->right = p6;
+
+  printf("BST has been created.");
 
   
   return 0;

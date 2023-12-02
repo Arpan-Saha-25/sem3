@@ -1,39 +1,65 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
+struct node {
+    int data;
+    struct node *left, *right;
+};
 
-int main(int argc, char const *argv[])
-{
-    // int a = 1,b = 2;
-    // (a>b) ? (b=a) : (a = b);
-    // printf("%d %d",a,b);
+struct node *createNodeP(int *p) {
+    struct node *root = malloc(sizeof(struct node));
+    root->data = *p;
+    root->left = NULL;
+    root->right = NULL;
 
-    // int array[5] = {1,2,3,4,5};
-    // a = array[array[array[1]]];
-    // printf("\n%d " ,a);
+    for (int i = 1; i < 10; i++) {
+        p++;  // Increment the pointer to the next element in the array
+        struct node *newNode;
+        newNode = (struct node *)malloc(sizeof(struct node));
+        newNode->data = *p;  // Copy the value from the array
+        newNode->left = NULL;
+        newNode->right = NULL;
 
+        struct node *temp = root;
 
-    // short arr[4][4] = {0,0};
-    // printf(" // %d " , sizeof(short));
-    // printf(" >> %u" , &(arr[0][0]));
-    // printf(" >> %u" , &(arr[1][3]));
-    #define break continue
-    for(int i = 0;i<10;i++){
-        if(i % 2 == 0) break;
-        printf("%d ",i+1);
+        while (1) {
+            if (*p < temp->data) {
+                if (temp->left == NULL) {
+                    temp->left = newNode;
+                    break;
+                }
+                temp = temp->left;
+            } else /*if (*p > temp->data)*/ {
+                if (temp->right == NULL) {
+                    temp->right = newNode;
+                    break;
+                }
+                temp = temp->right;
+            }
+        }
     }
 
-    int a = 3;
-    // printf("%d%d%d",a++,a++,++a);
-    printf("%d ",a++);
-    printf("%d ",a++);
-    printf("%d ",++a);
-
-    a = 3;
-    printf(" %d%d%d",a++,a++,++a);
-                    //  5  4  6
-
-
-
-    return 0;
+    return root;
 }
 
+void inOrder(struct node *root) {
+    if (root != NULL) {
+        inOrder(root->left);
+        printf("%d ", root->data);
+        inOrder(root->right);
+    }
+}
+
+int main(int argc, char const *argv[]) {
+    printf("Creating BST : \n");
+    int arr[10];
+    printf("Enter the elements : \n");
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &arr[i]);
+    }
+    printf("\n");
+
+    struct node *r = createNodeP(arr);
+    inOrder(r);
+    return 0;
+}
