@@ -1,0 +1,7 @@
+heap data structure 
+
+-->  node -> i 
+-->  Parent(i) = floor(i/2)   except root node 
+-->  left_child(i) = 2*i
+-->  right_child(i) = 2*i + 1
+
